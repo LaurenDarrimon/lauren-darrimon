@@ -21,10 +21,9 @@ Project.init(
         },
         repo_url: {
             type: DataTypes.STRING,
-            allowNull: true,
         },
         deployed_url: {
-            type: DataTypes.INTEGER,  
+            type: DataTypes.STRING,  
         },
         image_path: { 
             type: DataTypes.STRING,
