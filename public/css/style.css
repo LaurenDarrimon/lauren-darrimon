@@ -1,27 +1,29 @@
 /*brand colors*/
 :root{
-    --purple: #CFB9FF; 
-    --neon: #DCFF79; 
+    --terra: #AF856B; 
+    --cream: #FFFAE9; 
+    --concrete: #DCDDDB; 
 }
 
 body {
     margin:0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Oranienbaum', serif;
     background-color: black;
     color:white;
 }
 
+
 a {
-    color: var(--purple);
+    color: var(--terra);
 }
 
 a:hover{
-    color: var(--neon);
+    color: var(--concrete);
 }
 
-h1, h2, h3 {
-    font-family: 'Bebas Neue', sans-serif;
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
 } 
 
 h1{
@@ -29,21 +31,19 @@ h1{
 }
 
 a h2{
-    color: var(--neon);
+    color: var(--cream);
     background-color: black;
     padding:30px;
 }
 
 /*style each div section*/
 #sec1 {
-    color: var(--neon);
-    background-color: var(--purple);
     height: 75vh;
 
 }
 
 #sec2 {
-    color: var(--neon);
+    color: var(--cream);
     background: url('images/keyboard.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ section{
 }
 
 #bio-box{
-    background-color: var(--neon);
+    background-color: var(--concrete);
     color:black;
     transform: translate(0, 90px);
     padding:40px;
@@ -75,7 +75,7 @@ section{
 
 button{
     background-color: black;
-    color: white;
+    color: var(--concrete);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
     padding:20px;
@@ -84,7 +84,7 @@ button{
 
 
 #portfolio{
-    background-color: white;
+    background-color: var(--concrete);
     color:black;
     padding: 80px;
     height: auto;
@@ -102,24 +102,17 @@ button{
     position:relative;
 }
 
-/*create an overlay for anchor element that will cover iframe so that whole iframe is 
+/*create an overlay for anchor element 
 a clickable link*/
 .thumbnail {
-    position:absolute; 
-    top:0; 
-    left:0; 
-    display:inline-block; 
     width:250px; 
     height:250px; 
-    z-index:5;
+    z-index:0;
 }
 
-.neon{
-    color: var(--neon);
-}
 
 #footer{
-    background-color: var(--purple);
+    background-color: var(--concrete);
     color:black;
     height:auto;
     padding:40px;
