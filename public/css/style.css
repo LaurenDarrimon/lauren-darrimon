@@ -1,0 +1,147 @@
+/*brand colors*/
+:root{
+    --purple: #CFB9FF; 
+    --neon: #DCFF79; 
+}
+
+body {
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+    color:white;
+}
+
+a {
+    color: var(--purple);
+}
+
+a:hover{
+    color: var(--neon);
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+} 
+
+h1{
+    font-size:50px;
+}
+
+a h2{
+    color: var(--neon);
+    background-color: black;
+    padding:30px;
+}
+
+/*style each div section*/
+#sec1 {
+    color: var(--neon);
+    background-color: var(--purple);
+    height: 75vh;
+
+}
+
+#sec2 {
+    color: var(--neon);
+    background: url('images/keyboard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    
+    
+
+}
+
+section{
+    padding: 40px;
+    height: 75vh;
+}
+
+#lauren{
+    margin:20px; 
+}
+
+#bio-box{
+    background-color: var(--neon);
+    color:black;
+    transform: translate(0, 90px);
+    padding:40px;
+}
+
+#meet{
+    transform: translate(0, 120px);
+}
+
+button{
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    padding:20px;
+    margin: botttom 30px;
+}
+
+
+#portfolio{
+    background-color: white;
+    color:black;
+    padding: 80px;
+    height: auto;
+}
+
+.portfolio-items{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: black;
+    color:white;
+}
+
+/*this div envelops the iframes*/
+.click-frame {
+    position:relative;
+}
+
+/*create an overlay for anchor element that will cover iframe so that whole iframe is 
+a clickable link*/
+.thumbnail {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    display:inline-block; 
+    width:250px; 
+    height:250px; 
+    z-index:5;
+}
+
+.neon{
+    color: var(--neon);
+}
+
+#footer{
+    background-color: var(--purple);
+    color:black;
+    height:auto;
+    padding:40px;
+}
+
+
+@media (min-width: 768px){
+    #sec2 {
+        height: 70vh;
+    }
+
+    #meet{
+        transform: translate(0, 0);
+    }
+
+    #bio-box{
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px){
+    #bio-box{
+        max-width: 500px;
+    }
+}
