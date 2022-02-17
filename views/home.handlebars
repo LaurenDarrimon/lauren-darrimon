@@ -1,28 +1,36 @@
-        <section class="row align-items-center" id="sec2">  
-            <div class="col-12 col-md-5">
-                <h2 id="meet" class="display-4">MEET LAUREN</h2>
-            </div> 
-            <div class="col-12 col-md-6 align-self-end" id="bio-box">
-                <p>
-                    Lauren specializes in inspired full stack web development and creative UI design. With 
-                    years as a web designer and a techinical background that started in physics 
-                    and bloomed into a career as a full-stack engineer, Lauren creates 
-                    beautiful applications where your vision can
-                    come to life!
-                </p>
-            </div>  
-        </section>
+<section class="row align-items-center" id="sec1">
+    <div class="col-12">
+        <h1 class="display-1">LAUREN DARRIMON</h1>
+        <h2 class="display-6 serif">Full Stack Engineer</h2>
+        <p></p>
+        
+    </div>
+    <div class="col-md-6">
+        <img
+        src="/assets/images/lauren.png"
+        alt="black and white headshot of Lauren"
+        id="lauren"
+        />
+    </div>
 
-        <section class="row" id="portfolio">
-            <div class="col-12">
-                <h2 class="display-2">PORTFOLIO</h2>
-            </div>
-            <div class="col-12">
+    <div class="col-md-6 align-self-end">
+        <h3>
+            Full Stack Web Development/ Front-End/ Back-End/ Javascript/ UI/UX  
+        </h3>
+        <h4><a href="#contact">Work with me.</a></h4>
+    </div>  
+</section>       
 
-                <div id="portfolio-list-section" class="row">
-                    {{#each projects as |project|}}
-                    {{>thumbnail}}
-                    {{/each}}
-                </div>
-            </div> 
-        </section>
+<section class="row" id="portfolio">
+    <div class="col-12">
+        <h2 class="display-2">PORTFOLIO</h2>
+    </div>
+    <div class="col-12">
+
+        <div id="portfolio-list-section" class="row">
+            {{#each projects as |project|}}
+            {{>thumbnail}}
+            {{/each}}
+        </div>
+    </div> 
+</section>

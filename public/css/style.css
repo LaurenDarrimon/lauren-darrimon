@@ -10,9 +10,8 @@ body {
     box-sizing: border-box;
     font-family: 'Oranienbaum', serif;
     background-color: black;
-    color:white;
+    color: var(--cream);
 }
-
 
 a {
     color: var(--terra);
@@ -26,8 +25,8 @@ h1, h2, h3{
     font-family: 'Raleway', sans-serif;
 } 
 
-h1{
-    font-size:50px;
+.serif {
+    font-family: 'Oranienbaum', serif;
 }
 
 a h2{
@@ -38,19 +37,7 @@ a h2{
 
 /*style each div section*/
 #sec1 {
-    height: 75vh;
-
-}
-
-#sec2 {
-    color: var(--cream);
-    background: url('images/keyboard.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 85vh;
-    
-    
-
+    height: 100vh;
 }
 
 section{
@@ -59,18 +46,8 @@ section{
 }
 
 #lauren{
-    margin:20px; 
-}
-
-#bio-box{
-    background-color: var(--concrete);
-    color:black;
-    transform: translate(0, 90px);
-    padding:40px;
-}
-
-#meet{
-    transform: translate(0, 120px);
+    margin:20px;
+    max-width: 90%; 
 }
 
 button{
@@ -97,44 +74,8 @@ button{
     color:white;
 }
 
-/*this div envelops the iframes*/
-.click-frame {
-    position:relative;
-}
-
-/*create an overlay for anchor element 
-a clickable link*/
 .thumbnail {
-    width:250px; 
-    height:250px; 
+    width:100%; 
     z-index:0;
 }
 
-
-#footer{
-    background-color: var(--concrete);
-    color:black;
-    height:auto;
-    padding:40px;
-}
-
-
-@media (min-width: 768px){
-    #sec2 {
-        height: 70vh;
-    }
-
-    #meet{
-        transform: translate(0, 0);
-    }
-
-    #bio-box{
-        max-width: 400px;
-    }
-}
-
-@media (min-width: 992px){
-    #bio-box{
-        max-width: 500px;
-    }
-}
