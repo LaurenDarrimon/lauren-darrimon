@@ -1,17 +1,15 @@
-
 <div class="card portfolio-items col-md-5 col-lg-4" style="width: 18rem;">
-  <img class="card-img-top" src="{{image_path}}">
+  <img class="card-img-top" src="{{image_path}}" />
   <div class="card-body">
     <h3 class="card-title">
-         <a href="{{deployed_url}}" target="_blank">
-            {{title}}
-        </a>
-        <br>
-        <a href="{{repo_url}}" target="_blank">
-            Code
-        </a>
+      <a href="{{deployed_url}}" target="_blank">
+        {{title}}
+      </a>
+      <br />
     </h3>
     <p class="card-text">{{description}}</p>
-    <a href="#" class="btn btn-primary">See More</a>
+    <a href="{{repo_url}}" target="_blank" class="btn btn-primary">Code</a>
+    <a href="{{deployed_url}}" target="_blank" class="btn btn-primary">Site</a>
   </div>
 </div>
+

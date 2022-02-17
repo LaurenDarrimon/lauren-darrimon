@@ -1,32 +1,38 @@
- <header>
-        <nav class="navbar navbar-white bg-white p-4">
-            <a class="navbar-brand" href="#"><h2>Lauren Darrimon</h2></a>
-          </nav>
-</header>
-
 <section class="row" id="portfolio">
-    <div class="col-12">
-        <h2 class="display-2"> 
+  <div class="col-12">
+    <h2 class="display-2">
+        <a href="{{deployed_url}}" target="_blank">
+            {{title}}
+        </a>
+    </h2>
+  </div>
+  <div class="col-12">
+
+    <div id="portfolio-list-section" class="row d-flex justify-content-around">
+
+      <div class="card portfolio-items col-md-5 col-lg-4" style="width: 18rem;">
+        <img class="card-img-top" src="{{image_path}}" />
+        <div class="card-body">
+          <h3 class="card-title">
             <a href="{{deployed_url}}" target="_blank">
-                     {{title}}
+              {{title}}
             </a>
-        </h2>
-    </div>
-    <div class="col-12">
-        <div id="portfolio-list-section" class="row">
-            <div class="portfolio-items col-12">
-
-                <a href="{{repo_url}}" target="_blank">
-                    <h3>Code</h3>
-                </a>
-
-                <p> {{description}} </p>
-
-                <a class="thumbnail">
-                    <img src="{{image_path}}" />
-                </a>
-            </div>
+            <br />
+          </h3>
+          <p class="card-text">{{description}}</p>
+          <a
+            href="{{repo_url}}"
+            target="_blank"
+            class="btn btn-primary"
+          >Code</a>
+          <a
+            href="{{deployed_url}}"
+            target="_blank"
+            class="btn btn-primary"
+          >Site</a>
         </div>
-    </div> 
-</section>
+      </div>
 
+    </div>
+  </div>
+</section>
