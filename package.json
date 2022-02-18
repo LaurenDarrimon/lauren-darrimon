@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/LaurenDarrimon/lauren-darrimon#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
