@@ -11,7 +11,7 @@
     <div id="portfolio-list-section" class="row d-flex justify-content-around">
 
       <div class="card portfolio-items col-md-10" style="width: 18rem;">
-        <img class="card-img-top" src="{{project.image_path}}" />
+       
         <div class="card-body">
           <h3 class="card-title">
             <a href="{{project.deployed_url}}" target="_blank">
@@ -20,6 +20,7 @@
             <br />
           </h3>
           <p class="card-text">{{project.description}}</p>
+          <p class="card-text">{{project.details}}</p>
           <a
             href="{{project.repo_url}}"
             target="_blank"
@@ -31,6 +32,7 @@
             class="btn btn-primary"
           >Site</a>
         </div>
+         <img class="card-img-bottom" src="{{project.big_picture}}" />
       </div>
 
     </div>
