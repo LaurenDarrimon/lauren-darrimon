@@ -16,8 +16,11 @@ Project.init(
             allowNull: false,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
+        },
+        details: {
+            type: DataTypes.TEXT,
         },
         repo_url: {
             type: DataTypes.STRING,
@@ -26,6 +29,10 @@ Project.init(
             type: DataTypes.STRING,  
         },
         image_path: { 
+            type: DataTypes.STRING,
+            allowNull: false,
+        }, 
+        big_picture: { 
             type: DataTypes.STRING,
             allowNull: false,
         }
