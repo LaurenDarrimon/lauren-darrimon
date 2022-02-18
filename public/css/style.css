@@ -31,15 +31,19 @@ h3 {
   font-family: "Oranienbaum", serif;
 }
 
-a h2 {
+a h1 {
   color: var(--cream);
-  background-color: black;
-  padding: 30px;
+  text-decoration: none;
+}
+
+a h1:hover {
+  color: var(--terra);
+  text-decoration: none;
 }
 
 /*style each div section*/
 #sec1 {
-  height: 100vh;
+  height: 120vh;
 }
 
 section {
@@ -94,4 +98,17 @@ section {
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+
+
+@media (min-width: 768px){
+  #sec1 {
+      height: 80vh;
+  }
+}
+
+@media (min-width: 992px){
+  #sec1 {
+    height: 95vh;
+}
 }
